@@ -36,6 +36,3 @@ toDoContents.addEventListener("click", function (e) {
     e.target.parentElement.remove();
   }
 });
-
-console.log(delBtn);
-delBtn.forEach((del) => {});
