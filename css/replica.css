@@ -80,6 +80,9 @@ section {
   margin-top: 20px;
   margin-left: 12px;
   margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .todo-item {
   display: flex;
