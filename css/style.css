@@ -9,6 +9,14 @@ html {
 body {
   font-family: sans-serif;
 }
+.replica:link,
+.replica:visited {
+  position: absolute;
+  left: 50%;
+  top: 89%;
+  transform: translate(-50%, 0);
+  color: #d0ebff;
+}
 #entire-section {
   position: relative;
   background: linear-gradient(to right, #536976, #292e49);
