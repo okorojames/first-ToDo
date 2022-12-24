@@ -36,7 +36,7 @@ addContent.addEventListener("click", function (e) {
 });
 //
 //
-const user = {
+/*const user = {
   firstName: "James",
   lastName: "Chizaram",
   age: 18,
@@ -44,4 +44,4 @@ const user = {
 };
 const userData = localStorage.setItem("user", JSON.stringify(user));
 const userData2 = JSON.parse(localStorage.getItem("user"));
-console.log(userData2);
+console.log(userData2);*/
