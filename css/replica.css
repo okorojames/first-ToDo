@@ -18,6 +18,7 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 2rem;
 }
 .todo-container {
   padding-bottom: 20px;
@@ -37,11 +38,11 @@ section {
   color: #dbe4ff;
 }
 .todoFirstContentH2 {
-  font-size: 32px;
+  font-size: 28px;
 }
 .todoDate {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 /*  */
 .todoSecondContent {

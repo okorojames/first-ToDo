@@ -9,6 +9,7 @@ date.textContent = fullDate;
 const addContent = document.querySelector(".todoThirdContent");
 const delBtn = document.querySelector(".todo-delete");
 const addBtn = document.querySelector(".btn");
+const item = document.querySelector(".todo-item");
 
 addBtn.addEventListener("click", addToDo);
 function addToDo() {
@@ -18,12 +19,17 @@ function addToDo() {
   } else {
     addContent.innerHTML += `
     
-<div class="todo-item">
+          <div class="todo-item">
             <p class="todo-paragraph">${userInput}</p>
             <i class="fas fa-trash todo-delete"></i>
           </div>
     
     `;
-    userInput.value = ``;
   }
+  userInput.value;
 }
+item.addEventListener("click", function (e) {
+  if (e.target.classList.contains("todo-delete")) {
+    e.target.parentElement.remove();
+  }
+});
