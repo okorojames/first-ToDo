@@ -1,7 +1,8 @@
 const date = document.querySelector(".todoDate");
-let day = new Date().getDate();
-let month = new Date().getMonth() + 1;
-let year = new Date().getFullYear();
+const todaysDate = new Date();
+let day = todaysDate.getDate();
+let month = todaysDate.getMonth() + 1;
+let year = todaysDate.getFullYear();
 let fullDate = `${day}-${month}-${year}`;
 date.textContent = fullDate;
 //
@@ -13,7 +14,7 @@ const item = document.querySelector(".todo-item");
 
 addBtn.addEventListener("click", addToDo);
 function addToDo() {
-  const userInput = document.querySelector(".todoHere").value;
+  let userInput = document.querySelector(".todoHere").value;
   if (userInput === "" || userInput === " " || userInput === "  ") {
     alert("please enter something");
   } else {
@@ -25,11 +26,22 @@ function addToDo() {
           </div>
     
     `;
+    document.querySelector(".todoHere").value = "";
   }
-  userInput.value;
 }
-item.addEventListener("click", function (e) {
+addContent.addEventListener("click", function (e) {
   if (e.target.classList.contains("todo-delete")) {
     e.target.parentElement.remove();
   }
 });
+//
+//
+const user = {
+  firstName: "James",
+  lastName: "Chizaram",
+  age: 18,
+  address: "Onitsha",
+};
+const userData = localStorage.setItem("user", JSON.stringify(user));
+const userData2 = JSON.parse(localStorage.getItem("user"));
+console.log(userData2);
