@@ -14,8 +14,8 @@ const item = document.querySelector(".todo-item");
 
 addBtn.addEventListener("click", addToDo);
 function addToDo() {
-  let userInput = document.querySelector(".todoHere").value;
-  if (userInput === "" || userInput === " " || userInput === "  ") {
+  let userInput = document.querySelector(".todoHere").value.trim();
+  if (userInput === "") {
     alert("please enter something");
   } else {
     addContent.innerHTML += `
